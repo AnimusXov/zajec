@@ -1,3 +1,26 @@
+.pointstable {
+    overflow: hidden
+}
+
+    .pointstable tr:hover {
+        background-color: #424242;
+    }
+
+    .pointstable td, th {
+        position: relative;
+    }
+
+        .pointstable td:hover::after, th:hover::after {
+            content: "";
+            position: absolute;
+            background-color: #8e8e8e;
+            left: 0;
+            top: -5000px;
+            height: 10000px;
+            width: 100%;
+            z-index: -1;
+        }
+
 .error {
     text-align: left;
     background: url(/img/goblin.svg) no-repeat top left;
